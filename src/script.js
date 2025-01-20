@@ -9,10 +9,13 @@ const info = `¡Hola! Soy Fabio Rojas, desarrollador principiante al que le enca
   ·  Actualmente estoy estudiando Ingeniería Informática para convertirme en desarrollador TI.
   ·  Estoy trabajando en varios proyectos como una extension de vscode de un LSP, una app de traducción, etc...
   ·  ¡Siempre estoy abierto a aprender cosas nuevas y cualquier ayuda es bienvenida!
+
 `
 
 const projects = `Entre mis proyectos tengo:
   ·  Extensión de VSCode de pseud
+  ·  Aplicación de traduccion en python symbtrans
+  ·  Juego estilo novela visual con minijuegos llamado proyectogallina
 
 `
 
@@ -20,16 +23,22 @@ const projects = `Entre mis proyectos tengo:
 const contact = `Puedes contactarme en:
   ·  fabiorrojas56@gmail.com
 
-  O también en cualquiera de mis RRSS.  
+  O también en cualquiera de mis RRSS. 
+
+`
+const socialmedia = `Mis redes sociales son:
+  ·  twitter_p
+  ·  github_p
+
 `
 
 // Comandos
 const commands = {
   info: info,
   projects: projects,
-  descargar_cv: "Por ahora no he subido mi CV :C",
+  "download -cv": "Por ahora mi CV no está disponible.\n",
   contact: contact,
-  "socialmedia --show": "pruebas"
+  "socialmedia --show": socialmedia
 };
 
 let cmd_blocked = false
@@ -48,7 +57,11 @@ function executeCommand(cmd) {
 
   const links = {
     'RRSS': `<span class="cmd-link" data-command="socialmedia --show">redes sociales</span>`,
-    'pseud': `<a class = "cmd-link" href="https://github.com/SymbiontZ/pseud-esp">Pseudocódigo en Español</a>`
+    'pseud': `<a class = "cmd-link" href="https://github.com/SymbiontZ/pseud-esp">Pseudocódigo en Español</a>`,
+    'symbtrans': `<a class = "cmd-link" href="https://github.com/SymbiontZ/symbztools">SymbZTools</a>`,
+    'proyectogallina': `<a class = "cmd-link" href="https://symbiontz.itch.io/esi-chronicles-gallina-dorada">Proyecto Gallina</a>`,
+    'twitter_p': `<a class = "cmd-link" href="https://x.com/symbiontz_">Twitter (X)</a>`,
+    'github_p': `<a class = "cmd-link" href="https://github.com/SymbiontZ">Github</a>`
   }
 
   function appendOutput(text) {
