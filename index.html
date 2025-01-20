@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio CMD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar">
+    <button class="nav-btn jetbrains-mono-normal" data-command="info">  Info</button>
+    <button class="nav-btn jetbrains-mono-normal" data-command="projects"> Proyectos</button>
+    <button class="nav-btn jetbrains-mono-normal" data-command="download cv"> CV</button>
+    <button class="nav-btn jetbrains-mono-normal" data-command="contact"> Contacto</button>
+  </div>
+    <h1 class="jetbrains-mono-normal">Fabio Rojas Portfolio</h1>
+
+    <div class="terminal jetbrains-mono-normal">
+      <div id="output"></div>
+      <div class="input-line jetbrains-mono-normal">
+        <span class="prompt">$</span>
+        <input class="jetbrains-mono-normal" type="text" id="cmd-input" autocomplete="off" placeholder="Escribe un comando...">
+        <button class = "jetbrains-mono-normal"id="clear-btn" title="Limpiar terminal"></button>
+      </div>
+    </div>
+
+  <script src="src/script.js"></script>
+</body>
+</html>
